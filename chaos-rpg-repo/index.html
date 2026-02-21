@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaos RPG - 3D Prototype</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <div id="hud-layer">
+        <div class="prompt-text">Press 'I' or 'Tab' to open the UI Menu | WASD to Move</div>
+    </div>
+
+    <div id="ui-overlay" style="display: none;">
+        <div class="ui-header">
+            <h1>The Black Market (Safe Zone)</h1>
+            <button class="close-btn" id="close-btn">X</button>
+        </div>
+        <div class="ui-content">
+            <div class="inventory-panel">
+                <h2>Your Backpack</h2>
+                <div class="grid-container">
+                    <div class="slot item-legendary" id="slot-legendary">W</div>
+                    <div class="slot item-epic" id="slot-epic">A</div>
+                    <div class="slot"></div>
+                    <div class="slot"></div>
+                    <div class="slot"></div>
+                    <div class="slot"></div>
+                    <div class="slot"></div>
+                    <div class="slot"></div>
+                    <div class="slot"></div>
+                    <div class="slot"></div>
+                    <div class="slot"></div>
+                    <div class="slot"></div>
+                </div>
+            </div>
+            
+            <div class="auction-panel">
+                <h2>Item Inspector</h2>
+                <div class="item-preview" id="item-details">
+                    <div style="color: #666; font-size: 18px;">Select an item from your backpack to inspect or list on the Auction House.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/game.js"></script>
+</body>
+</html>
